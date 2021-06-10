@@ -63,7 +63,7 @@ else:
         paperless_billing = st.sidebar.selectbox('PaperlessBilling',('Yes','No'))
         payment_method = st.sidebar.selectbox('PaymentMethod',('Electronic check','Mailed check', 'Bank transfer (automatic)', 'Credit card (automatic)'))
         
-        monthly_charges = st.sidebar.slider('Total Charges ($)', 0.0, 200.0)
+        monthly_charges = st.sidebar.slider('Monthly Charges ($)', 0.0, 200.0)
         total_charges = st.sidebar.slider('Total Charges ($)', 0.0, 10000.0)
 
         contract = format_value(contract)
